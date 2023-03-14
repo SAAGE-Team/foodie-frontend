@@ -14,6 +14,7 @@ export default function Register() {
       <div className="register-left">
         {/* <SignUpImage/> */}
         <img src={samosaImage} id="foodieImage" />
+        <img src={clock} alt="clock" id="clock" />
       </div>
       <div className="register-center"></div>
       <div className="register-right">

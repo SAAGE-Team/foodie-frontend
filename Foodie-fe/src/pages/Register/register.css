@@ -35,6 +35,18 @@
   float: left;
 }
 
+.register-left img#clock {
+    position: absolute;
+    width: 90px;
+    height: 85.05px;
+    left: 70px;
+    top: 225.78px;
+  
+    background: #f2c94c;
+    border-radius: 20px;
+    transform: rotate(-20deg);
+  }
+
 .register .register-left img#foodieImage {
     margin: 10% 0;
     width: 519px;
