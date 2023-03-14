@@ -121,3 +121,15 @@
     font-weight: var(--heaviest-weight);
     color: var(--dark-color);
 }
+
+.frame-30 {
+  position: absolute;
+  left: 0px;
+  top: 400px;
+}
+
+.frame-31 {
+  position: absolute;
+  top: 550px;
+  left: 200px;
+}

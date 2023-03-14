@@ -4,6 +4,9 @@ import samosaImage from "./../../assets/samosa-image.png";
 import clock from "./../../assets/clock.png";
 import fire from "./../../assets/noto_fire.png";
 import arrow from "./../../assets/arrow.png";
+import frame30 from './../../assets/fame-30.png'
+import frame31 from './../../assets/frame-31.jpg'
+import shopping from './../../assets/Shopping-04.jpg'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import { FoodieLogo } from "./../../assets/svg";
@@ -14,11 +17,14 @@ export default function Login() {
       <div className="register-left">
         {/* <SignUpImage/> */}
         <img src={samosaImage} id="foodieImage" />
+        <img src={frame30} alt="" className="frame-30"/>
+        <img src={frame31} alt="" className="frame-31"/>
       </div>
       <div className="register-center"></div>
       <div className="register-right">
         <div className="top">
           <FoodieLogo />
+          <img src={shopping} alt="" />
         </div>
         <div className="form">
           <p>Welcome back, Bill!</p>
