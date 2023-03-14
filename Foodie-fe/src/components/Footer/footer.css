@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --main-color: #eb5757;
+  --bright-color: #fff;
+  --heaviest-weight: 700;
+  --title-font-weight: 600;
+  --p-font-weight: 500;
+  --dark-color: #333333;
+  --title-font-weight: 600;
+  --title-font-size: 2.8125rem;
+}
