@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --main-color: #eb5757;
+  --bright-color: #fff;
+  --heaviest-weight: 700;
+  --title-font-weight: 600;
+  --p-font-weight: 500;
+  --dark-color: #333333;
+  --title-font-weight: 600;
+  --title-font-size: 2.8125rem;
+}
+
+.home * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.home {
+  margin: 5.9375rem;
+  color: var(--dark-color);
+}
+
+/* Nav bar */
+
+.navbar {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 0 0 7rem 0;
+}
+.navbar .nav-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-left {
+  position: absolute;
+  width: 51px;
+  height: 45px;
+  left: 95px;
+  top: 46px;
+}
+
+.nav-center {
+  position: absolute;
+  top: 3.6rem;
+  left: 30%;
+}
+
+.nav-center ul {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-center ul li {
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.nav-center .active {
+  color: var(--main-color) !important;
+}
+
+.nav-center .active::after {
+  content: "";
+  width: 0.625rem;
+  height: 0.625rem;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--main-color);
+  display: block;
+  margin: 0.625rem auto;
+}
+
+li.nav-component:not(.active) {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+}
+
+li.nav-component > ul {
+  display: none;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+li.nav-component > ul > li {
+  cursor: pointer;
+}
+
+li.nav-component > svg {
+  position: relative;
+  top: 18%;
+  right: 8%;
+}
+
+li.nav-component:hover li.nav-component > ul {
+  display: inline-block;
+}
+
+/* nav icons on the right */
+.nav-right {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  position: absolute;
+  top: 3.6rem;
+  left: 70%;
+}
+
+.nav-right * {
+  cursor: pointer;
+}
+
+/* Home top */
+
+.home-top {
+  display: flex;
+  flex-direction: row;
+}
+
+p#intro-p {
+  font-weight: var(--heaviest-weight);
+  font-size: 4.5rem;
+  width: 37.125rem;
+  height: 16.75rem;
+  text-transform: capitalize;
+}
+
+p > span {
+  color: var(--main-color);
+}
+
+.home-top-right img#samosaImage {
+  position: absolute;
+  width: 719px;
+  height: 751px;
+  left: 563px;
+  top: 76px;
+}
+
+.home-top-right img#clock {
+  position: absolute;
+  width: 90px;
+  height: 85.05px;
+  left: 662px;
+  top: 225.78px;
+
+  background: #f2c94c;
+  border-radius: 20px;
+  transform: rotate(-20deg);
+}
+
+.home-top-right svg {
+  height: 131px;
+  width: 272px;
+  left: 1030px;
+  top: 745px;
+  border-radius: 20px;
+}
+
+.smaller-p {
+  position: absolute;
+  width: 29.375rem;
+  top: 38.3225rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+#arrow {
+  position: absolute;
+  width: 78.06px;
+  height: 147.5px;
+  left: 1226px;
+  top: 294px;
+}
+
+#fire {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 1208px;
+  top: 202px;
+}
+
+/* SERVICES */
+
+.services .titles,
+.services #title {
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  color: var(--main-color);
+  text-transform: uppercase;
+  position: absolute;
+  width: 181px;
+  height: 23px;
+  left: 630px;
+  top: 1027px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: var(--title-font-weight);
+  letter-spacing: 0.16em;
+}
+
+#service-p {
+  position: absolute;
+  left: 454px;
+  top: 1070px;
+}
+
+.big-p {
+  text-transform: capitalize;
+  font-weight: var(--heaviest-weight);
+  font-size: 2.8125rem;
+  color: var(--dark-color);
+  width: 532px;
+  height: 141px;
+}
+
+/* Menu div */
+.menu {
+  position: absolute;
+  top: 700px;
+  /* right: 1700px; */
+}
+
+.menu .titles .left * {
+  text-align: left !important;
+}
+
+#menu-title,
+#big-p {
+  position: absolute;
+  left: 15px;
+}
+
+#menu-title {
+  top: 1000px;
+}
+
+.big-p {
+  top: 3.6rem;
+}
+
+.options {
+  display: grid;
+  gap: 10%;
+}
+
+.options .option .icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: var(--bright-color);
+  margin: 0 auto;
+}
+
+.options .option .text {
+  text-transform: uppercase;
+}
+
+.options .active {
+  width: 15.875rem;
+  background-color: var(--main-color);
+}
+
+#big-p {
+  top: 1020px;
+}
