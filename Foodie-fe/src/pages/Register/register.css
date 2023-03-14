@@ -26,7 +26,7 @@
 }
 
 .register .register-center {
-  width: .5rem;
+  width: 0.5rem;
   min-height: 100vh;
   background-color: var(--main-color);
 }
@@ -35,12 +35,23 @@
   float: left;
 }
 
-.register .register-left img#foodieImage {
-    margin: 10% 0;
-    width: 519px;
-    height: 551px;
+.register-left img#clock {
+  position: absolute;
+  width: 90px;
+  height: 85.05px;
+  left: 70px;
+  top: 225.78px;
 
-  }
+  background: #f2c94c;
+  border-radius: 20px;
+  transform: rotate(-20deg);
+}
+
+.register .register-left img#foodieImage {
+  margin: 10% 0;
+  width: 519px;
+  height: 551px;
+}
 
 .register .register-center {
   place-items: center;
@@ -54,7 +65,7 @@
 /* Form */
 
 .form * {
-  padding: 0.525rem;    
+  padding: 0.525rem;
 }
 
 .form h2 {
@@ -93,31 +104,32 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  
 }
 .alternative-heading .line {
   height: 1px;
   width: 30%;
   background-color: var(--dark-color);
   position: relative;
-  top: .6rem;
+  top: 0.6rem;
 }
 
-.alternative-heading .text{
-    text-transform: capitalize;
-    font-size: .8rem;
-    font-weight: var(--p-font-weight);
-    color: var(--dark-color);
+.alternative-heading .text {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+  font-weight: var(--p-font-weight);
+  color: var(--dark-color);
 }
 
-.alternative-heading, .no-account{
-    text-align: center;
+.alternative-heading,
+.no-account {
+  text-align: center;
 }
 
-.no-account{
-    margin: 2rem 0;
+.no-account {
+  margin: 2rem 0;
 }
-.no-account p>span{
-    font-weight: var(--heaviest-weight);
-    color: var(--dark-color);
+.no-account p > span {
+  font-weight: var(--heaviest-weight);
+  color: var(--dark-color) !important;
+  cursor: pointer;
 }
