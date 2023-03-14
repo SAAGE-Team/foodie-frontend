@@ -1,5 +1,7 @@
 import "./home.css";
 
+import {Link} from 'react-router-dom';
+
 import samosaImage from "./../../assets/samosa-image.png";
 import clock from "./../../assets/clock.png";
 import fire from "./../../assets/noto_fire.png";
@@ -60,7 +62,7 @@ export default function Home() {
             and free delivery
           </p>
 
-          <Button value="Get started" />
+          <Link to="/register"><Button value="Get started" /></Link>
         </div>
         <div className="home-top-right">
           <img src={samosaImage} id="samosaImage" alt="samosa image" />

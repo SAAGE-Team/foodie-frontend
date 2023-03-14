@@ -1,5 +1,7 @@
 import "./register.css";
 
+import {Link} from 'react-router-dom';
+
 import samosaImage from "./../../assets/samosa-image.png";
 import clock from "./../../assets/clock.png";
 import fire from "./../../assets/noto_fire.png";
@@ -14,6 +16,7 @@ export default function Register() {
       <div className="register-left">
         {/* <SignUpImage/> */}
         <img src={samosaImage} id="foodieImage" />
+        <img src={clock} alt="clock" id="clock" />
       </div>
       <div className="register-center"></div>
       <div className="register-right">
@@ -57,7 +60,7 @@ export default function Register() {
         </div>
         <div className="no-account">
           <p>
-            You already have an account? <span>Login</span>
+            You already have an account? <Link to="/login"><span>Login</span></Link>
           </p>
         </div>
       </div>
